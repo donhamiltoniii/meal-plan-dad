@@ -6,3 +6,5 @@ export type Recipe = {
   description: string;
   content: string;
 };
+
+export type RecipeLink = { title: string; slug: string };
