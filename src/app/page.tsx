@@ -5,6 +5,8 @@ import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 
+import "./page.module.scss";
+
 export default async function Home() {
   const getPageContent = () => {
     const folder = "src/data/";
