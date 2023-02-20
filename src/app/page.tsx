@@ -27,13 +27,13 @@ export default async function Home() {
 
   return (
     <main>
-      <Markdown>{getPageContent()}</Markdown>
       <section>
         <h2>Recipes</h2>
         <nav>
           <ul>{recipeListItems}</ul>
         </nav>
       </section>
+      <Markdown>{getPageContent()}</Markdown>
     </main>
   );
 }

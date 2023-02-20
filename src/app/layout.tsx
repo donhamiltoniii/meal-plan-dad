@@ -1,4 +1,6 @@
-import Link from "next/link";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+
 import "./globals.scss";
 
 export default function RootLayout({
@@ -14,13 +16,9 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <header>
-          <Link href="/">
-            <h1>Pops Meal Plan</h1>
-          </Link>
-        </header>
+        <Header />
         {children}
-        <footer>You got this</footer>
+        <Footer />
       </body>
     </html>
   );

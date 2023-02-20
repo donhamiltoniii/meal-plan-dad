@@ -6,6 +6,11 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .video-container {
   position: relative;
   width: 100%;
@@ -19,4 +24,10 @@ html {
     height: 100%;
     border: 0;
   }
+}
+
+main {
+  margin: 0 auto;
+  max-width: 40rem;
+  width: 90%;
 }

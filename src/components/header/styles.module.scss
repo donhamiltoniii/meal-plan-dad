@@ -1,0 +1,12 @@
+.header {
+  background-color: #011;
+  color: #acd6fd;
+  display: flex;
+  padding: 1rem;
+
+  &__link {
+    color: #acd6fd;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
