@@ -1,3 +1,9 @@
+export type MealPlan = {
+  title: string;
+  meals: string;
+  content: string;
+};
+
 export type Recipe = {
   title: string;
   prepTime: string;
@@ -7,4 +13,4 @@ export type Recipe = {
   content: string;
 };
 
-export type RecipeLink = { title: string; slug: string };
+export type SiteLink = { title: string; slug: string };
