@@ -1,8 +1,8 @@
-import { RecipeLink } from "@/types";
+import { SiteLink } from "@/types";
 import matter from "gray-matter";
 import fs from "fs";
 
-export const getRecipeLinks = (): RecipeLink[] => {
+export const getRecipeLinks = (): SiteLink[] => {
   const folder = "src/data/recipes/";
   const files = fs.readdirSync(folder);
   const markdownFiles = files.filter((file: string) => file.endsWith(".mdx"));

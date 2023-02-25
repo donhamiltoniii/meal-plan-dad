@@ -3,7 +3,7 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 
 import css from "./styles.module.scss";
-import { Recipe, RecipeLink } from "@/types";
+import { Recipe, SiteLink } from "@/types";
 import { getRecipeLinks } from "@/lib/get-recipe-links";
 
 const getRecipeContent = (slug: string): Recipe => {
@@ -24,7 +24,7 @@ const getRecipeContent = (slug: string): Recipe => {
 };
 
 export const generateStaticParams = async () => {
-  return getRecipeLinks().map((recipeLink: RecipeLink) => ({
+  return getRecipeLinks().map((recipeLink: SiteLink) => ({
     slug: recipeLink.slug,
   }));
 };
